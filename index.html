@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <button id="expand-sidebar" class="expand-button"><i class="fas fa-angle-double-right"></i></button>
+        <button id="toggle-sidebar"><i class="fas fa-bars"></i> Toggle Sidebar</button>
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-list"></i>
+                Sections
+                <button id="toggle-theme" class="theme-toggle-button">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="collapse-sidebar" class="collapse-button"><i class="fas fa-angle-double-left"></i></button>
+            </div>
+            <input type="text" id="search-bar" placeholder="Search...">
+        </div>
+        <div class="main-content">
+
+            <div class="content-header"><i class="fas fa-info-circle"></i> Details</div>
+
+            <div class="details-area">
+                <div class="containers">
+                    <div class="input">
+                        <label for="array">Enter an array of numbers:</label>
+                        <input type="text" id="array" placeholder="e.g., 3 1 4 1 5 9 2 6 5 3 5">
+                        <label for="target">Enter the target number to search for:</label>
+                        <input type="text" id="target" placeholder="e.g., 5">
+                        <button onclick="linearSearch()">Linear Search</button>
+                        <button onclick="binarySearch()">Binary Search</button>
+                    </div>
+                    <div class="visualization">
+                        <div id="array-container"></div>
+                        <p id="result"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fab"><i class="fas fa-plus"></i></div>
+    <script src="main.js"></script>
+</body>
+
+</html>
